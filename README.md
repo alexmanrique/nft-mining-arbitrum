@@ -46,35 +46,3 @@ forge script script/MintCertificate.s.sol:MintCertificate \
 ```
 
 > **Note:** The contract address is defined in `script/MintCertificate.s.sol`. If the contract is deployed on a different network or address, update the `contractaddress` variable in the script.
-
-### Test
-
-```bash
-forge test
-```
-
-### Format
-
-```bash
-forge fmt
-```
-
-### Gas snapshots
-
-```bash
-forge snapshot
-```
-
-## Project structure
-
-```
-src/
-  IBlockchainAcceleratorCertificate.sol   # Certificate contract interface
-script/
-  MintCertificate.s.sol                   # Script to mint BAC certificates
-broadcast/                                # Execution history (e.g. Arbitrum 42161)
-```
-
-## Foundry documentation
-
-https://book.getfoundry.sh/

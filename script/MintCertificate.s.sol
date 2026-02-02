@@ -5,7 +5,6 @@ import {Script, console} from "forge-std/Script.sol";
 import "../src/IBlockchainAcceleratorCertificate.sol";
 
 contract MintCertificate is Script {
-   
     function run() public {
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
