@@ -30,19 +30,7 @@ forge build
 The `MintCertificate` script calls `mintBAC()` on the deployed contract. It is configured by default for the contract on Arbitrum One (chain id 42161).
 
 ```bash
-forge script script/MintCertificate.s.sol:MintCertificate \
-  --rpc-url <RPC_URL> \
-  --private-key $PRIVATE_KEY \
-  --broadcast
-```
-
-Example with environment variables:
-
-```bash
-forge script script/MintCertificate.s.sol:MintCertificate \
-  --rpc-url $RPC_URL \
-  --private-key $PRIVATE_KEY \
-  --broadcast
+forge script script/MintCertificate.s.sol --fork-url https://1rpc.io/arb -vvvvv --broadcast
 ```
 
 > **Note:** The contract address is defined in `script/MintCertificate.s.sol`. If the contract is deployed on a different network or address, update the `contractaddress` variable in the script.
